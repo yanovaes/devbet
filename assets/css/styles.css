@@ -8,28 +8,36 @@
 body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);      
-    padding-top: 156px;
-}
-
-#modal-entrar-label {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.1rem;
-}
-
-h4 {
-    font-family: 'Raleway', sans-serif;
-    font-style: italic;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -0.1rem;
+    padding-top: 160px;
 }
 
 nav {
     background-color: var(--bs-body-bg); 
     border-bottom: 1px solid var(--bs-border-color);
+}
+
+.toast-header h5, h4 {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+}
+
+#modal-label {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
+}
+
+.header-criar-offcanvas {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
 }
 
 button.accordion-button {
@@ -38,16 +46,6 @@ button.accordion-button {
 
 div.accordion-body {
     background-color: var(--bs-tertiary-bg);
-}
-
-#menu a:hover {
-    color: var(--bs-info);
-}
-
-#btn-entrar {
-    border: 1px solid currentColor;
-    border-radius: 5px;
-    padding: 4px 12px;
 }
 
 .footer {
