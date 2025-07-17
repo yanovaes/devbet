@@ -23,6 +23,7 @@ const NavBar = () => {
           <div className="navbar-nav mx-auto mb-3 mb-md-0">
             <NavLink className="nav-link nav-item" to="/">Jogos</NavLink>
             <NavLink className="nav-link nav-item" to="/apostas">Apostas</NavLink>
+            <NavLink className="nav-link nav-item" to="/favoritos">Favoritos</NavLink> 
             <NavLink className="nav-link nav-item" to="/suporte">Suporte</NavLink>
           </div>
           <div className="navbar-nav gap-2 gap-lg-3">

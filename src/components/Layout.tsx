@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import LoginModal from './LoginModal';
 import { Link } from "react-router-dom";
 
 const Layout = () => {
@@ -19,34 +20,7 @@ const Layout = () => {
       {/* MODALS E OFFCANVAS GLOBAIS */}
       
       {/* Modal Login */}
-      <div className="modal fade" id="modal-entrar" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="modal-entrar-label" aria-hidden="true">
-        <div className="modal-dialog modal-md">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <h1 className="modal-title fs-5" id="modal-label">Entre para jogar!</h1>
-                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div className="modal-body">
-                    <form action="">
-                        <div className="form-floating mb-3">
-                            <input type="email" className="form-control" id="email-input" placeholder="E-mail" />
-                            <label htmlFor="email-input">E-mail</label>
-                        </div>
-                        <div className="form-floating mb-3">
-                            <input type="password" className="form-control" id="senha-input" placeholder="Senha" />
-                            <label htmlFor="senha-input">Senha</label>
-                        </div>
-                        <button type="submit" className="btn btn-info w-100">Entrar</button>
-                    </form>
-                </div>
-                <div className="modal-footer d-flex flex-column align-items-center">
-                    <p>Não possui conta?</p>
-                    <a href="#registrar" style={{textDecoration: 'none', color: 'var(--bs-info)'}}>Registre-se</a>
-                </div>
-            </div>
-        </div>
-      </div>
-
+      <LoginModal />
       {/* Modal Alertas */}
       <div className="modal fade" id="modal-alertas" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="modal-alertas-label" aria-hidden="true">
         <div className="modal-dialog modal-md">
