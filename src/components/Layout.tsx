@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import LoginModal from './LoginModal';
 import { Link } from "react-router-dom";
+import BilheteFlutuante from './BilheteFlutuante';
 
 const Layout = () => {
   return (
@@ -21,6 +22,7 @@ const Layout = () => {
       
       {/* Modal Login */}
       <LoginModal />
+      <BilheteFlutuante />
       {/* Modal Alertas */}
       <div className="modal fade" id="modal-alertas" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="modal-alertas-label" aria-hidden="true">
         <div className="modal-dialog modal-md">

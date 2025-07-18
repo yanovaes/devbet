@@ -3,10 +3,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
 import JogosPage from "../pages/JogosPage";
 import ApostasPage from "../pages/ApostasPage";
-import FavoritosPage from "../pages/FavoritosPage";
 import SuportePage from "../pages/SuportePage";
+import FavoritosPage from '../pages/FavoritosPage';
 import CadastroPage from '../pages/CadastroPage';
+import AdminPage from '../pages/AdminPage';
+import RotaProtegida from '../auth/RotaProtegida';
 import ErroPage from "../pages/ErroPage";
+import BilhetePage from '../pages/BilhetePage';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +20,15 @@ const router = createBrowserRouter([
       { index: true, element: <JogosPage /> },
       { path: "apostas", element: <ApostasPage /> },
       { path: "favoritos", element: <FavoritosPage /> },
-      { path: "cadastro", element: <CadastroPage /> },
       { path: "suporte", element: <SuportePage /> },
+      { path: "cadastro", element: <CadastroPage /> },
+      { path: "bilhete", element: <BilhetePage /> },
+      {
+        element: <RotaProtegida />,
+        children: [
+          { path: "admin", element: <AdminPage /> }
+        ]
+      }
     ],
   },
 ]);
